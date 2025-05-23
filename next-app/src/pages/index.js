@@ -7,8 +7,8 @@ export default function Component() {
   if (session) {
     return (
       <>
-      {/* <img src={session.user.image} /> */}
-        Signed in as {session.user.email} <br />
+      <img src={session.user.image} />
+        Signed in as {session.user.name}<br />
         <button onClick={() => signOut('github')}>Sign out</button>
       </>
     )
